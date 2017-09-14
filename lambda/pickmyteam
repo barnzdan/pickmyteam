@@ -1,0 +1,29 @@
+import boto3
+import random
+import datetime
+
+def lambda_handler(event, context):
+    
+    year = datetime.datetime.now().year
+    client = boto3.client('s3')
+    s3 = boto3.resource('s3')
+    object = client.Object('pickmyteam.name','r_teams')
+    #response = urllib2.urlopen('https://s3.amazonaws.com/pickmyteam.name/r_teams', 'r')
+    teams = object.read()
+
+
+    #rand_team = "Atlanta Falcons" #random.choice(teams)
+    rand_team = random.choice(teams)
+    logo = rand_team.split(' ')[-1].lower() + '.gif'
+    
+    response_string = "Your NFL team for the " + str(year) + " season is: The "
+    
+    resp = {
+        "statusCode": 200,
+        "headers": {
+            "Access-Control-Allow-Origin": "*",
+        },
+        "body": response_string + rand_team + ',' + logo
+    }
+    
+    return resp

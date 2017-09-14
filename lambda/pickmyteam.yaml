@@ -1,0 +1,34 @@
+﻿AWSTemplateFormatVersion: '2010-09-09'
+Transform: 'AWS::Serverless-2016-10-31'
+Description: random team pick
+Resources:
+  pickmyteam:
+    Type: 'AWS::Serverless::Function'
+    Properties:
+      Handler: lambda_function.lambda_handler
+      Runtime: python3.6
+      CodeUri: .
+      Description: random team pick
+      MemorySize: 128
+      Timeout: 3
+      Role: 'arn:aws:iam::709690093284:role/service-role/TeamPickRole'
+      Events:
+        Api1:
+          Type: Api
+          Properties:
+            Path: /
+            Method: GET
+        BucketEvent1:
+          Type: S3
+          Properties:
+            Bucket:
+              Ref: Bucket1
+            Events:
+              - 's3:ObjectCreated:Post'
+            Filter:
+              S3Key:
+                Rules:
+                  - Name: prefix
+                    Value: /
+  Bucket1:
+    Type: 'AWS::S3::Bucket'
