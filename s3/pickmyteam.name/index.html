@@ -6,6 +6,7 @@
             if (this.readyState == 4 && this.status == 200) {
                 document.getElementById("team").innerHTML = this.responseText.split(',')[0];
                 document.getElementById("logo").setAttribute("src",this.responseText.split(',')[1]);
+
             }
         };
         xhttp.open("GET", " https://aloc1vycra.execute-api.us-east-1.amazonaws.com/prod", true);
