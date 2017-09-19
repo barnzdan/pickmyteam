@@ -4,6 +4,7 @@
         var xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
+                teamButton.setAttribute("hidden", true);
                 document.getElementById("team").innerHTML = this.responseText.split(',')[0];
                 document.getElementById("logo").setAttribute("src",this.responseText.split(',')[1]);
 
@@ -17,7 +18,7 @@
     <body>
         <div align="center">
             <br><br><br><br>
-            <button onclick="GetTeamName()">Give me a Team!</button>
+	    <button id="teamButton" onclick="GetTeamName()">Give me a Team!</button>
             <br>    
             <h1><span id="team"></span></h1>
             <br>
