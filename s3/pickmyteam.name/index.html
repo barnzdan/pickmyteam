@@ -3,19 +3,21 @@
     function GetTeamName() {
         teamButton.setAttribute("hidden", true);
         document.getElementById("spinGif").style.display = "block";
-        var xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = function() {
-            if (this.readyState == 4 && this.status == 200) {
-                document.getElementById("team").innerHTML = this.responseText.split(',')[0];
-                document.getElementById("logo").setAttribute("src", this.responseText.split(',')[1]);
-                document.getElementById("spinGif").style.display = "none";
-            }
-            else {
-                teamButton.setAttribute("hidden", false);
-            }
-        };
-        xhttp.open("GET", " https://aloc1vycra.execute-api.us-east-1.amazonaws.com/prod", true);
-        xhttp.send();
+        setTimeout(function () {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("team").innerHTML = this.responseText.split(',')[0];
+                    document.getElementById("logo").setAttribute("src", this.responseText.split(',')[1]);
+                    document.getElementById("spinGif").style.display = "none";
+                }
+                else {
+                    teamButton.setAttribute("hidden", false);
+                }
+            };
+            xhttp.open("GET", " https://aloc1vycra.execute-api.us-east-1.amazonaws.com/prod", true);
+            xhttp.send();
+        }, 1000);
     }
     </script>
 
