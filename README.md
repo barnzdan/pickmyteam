@@ -1,10 +1,20 @@
-# pickmyteam
-A public repo for side project: PickMyTeam.Name
+[![GitHub issues](https://img.shields.io/github/issues/badges/shields.svg)](https://github.com/barnzdan/pickmyteam/issues) [![GitHub contributors](https://img.shields.io/github/contributors/cdnjs/cdnjs.svg)]()
 
-The goals of this project were to come up with an extremely simple infrastructure in AWS to create a random NFL Team selection app. There were initially 3 goals:
+#PickMyTeam - Teams for the Indecisive
+
+A public repository for the NFL team picking side project: http://pickmyteam.name
+
+The goal of this project was to come up with an extremely simple infrastructure in AWS to create a random NFL Team selection app. There were initially 3 objectives for this:
 
 1. Keep it simple
 2. Keep it cheap
-3. Use Lambda, S3, API Gateway and Route 53
+3. Use a combination of Lambda, S3, API Gateway and Route 53
 
-The app can be found at:  http://pickmyteam.name
+<br><br>
+>**PickMyTeam** © 2017+, Dan Barnes<br>
+Released under the [APACHE] License.<br>
+Authored and maintained by Dan Barnes and Zach Leaver with help from [contributors][Github contributors].
+
+[APACHE]: https://www.apache.org/licenses/LICENSE-2.0
+[Github issues]: https://github.com/barnzdan/pickmyteam/issues
+[Github contributors]: https://github.com/barnzdan/pickmyteam/graphs/contributors
