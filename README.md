@@ -1,4 +1,4 @@
-[![GitHub issues](https://img.shields.io/github/issues/barnzdan/pickmyteam.svg)](Github issues) [![GitHub contributors](https://img.shields.io/github/contributors/barnzdan/pickmyteam.svg)](Github contributors) [![license](https://img.shields.io/github/license/barnzdan/pickmyteam.svg)](https://github.com/barnzdan/pickmyteam/blob/master/LICENSE)
+[![GitHub issues](https://img.shields.io/github/issues/barnzdan/pickmyteam.svg)]([Github issues]) [![GitHub contributors](https://img.shields.io/github/contributors/barnzdan/pickmyteam.svg)]([Github contributors]) [![license](https://img.shields.io/github/license/barnzdan/pickmyteam.svg)](https://github.com/barnzdan/pickmyteam/blob/master/LICENSE)
 
 # PickMyTeam - Teams for the Indecisive
 
