@@ -17,3 +17,7 @@ Authored and maintained by Dan Barnes and Zach Leaver with help from [contributo
 
 [APACHE]: https://www.apache.org/licenses/LICENSE-2.0
 [Github contributors]: https://github.com/barnzdan/pickmyteam/graphs/contributors
+## Support on Beerpay
+Hey dude! Help me out for a couple of :beers:!
+
+[![Beerpay](https://beerpay.io/barnzdan/pickmyteam/badge.svg?style=beer-square)](https://beerpay.io/barnzdan/pickmyteam)  [![Beerpay](https://beerpay.io/barnzdan/pickmyteam/make-wish.svg?style=flat-square)](https://beerpay.io/barnzdan/pickmyteam?focus=wish)
